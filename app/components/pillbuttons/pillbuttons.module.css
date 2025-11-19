@@ -1,0 +1,25 @@
+.buttonRow {
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* spacing between buttons */
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.button {
+  padding: 10px 24px;
+  border: 2px solid currentColor; /* inherits text color */
+  border-radius: 50px; /* pill shape */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.button:hover {
+  opacity: 0.8; /* simple hover effect without adding color */
+}

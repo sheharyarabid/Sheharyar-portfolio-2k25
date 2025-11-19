@@ -73,6 +73,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                 <DecoderText text={config.name} delay={500} />
                 <span className={styles.primaryText}>-</span>
                 <DecoderText text={config.nameUrdu} delay={500}/>
+
               </h1>
               <Heading level={0} as="h2" className={styles.title}>
                 <VisuallyHidden className={styles.label}>
@@ -110,9 +111,11 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                       )}
                     </Transition>
                   ))}
+
                 </div>
               </Heading>
             </header>
+                  
             <RouterLink
               to="/#project-1"
               className={styles.scrollIndicator}

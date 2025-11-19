@@ -1,6 +1,6 @@
-import profileImgLarge from '~/assets/profile-large.jpg';
-import profileImgPlaceholder from '~/assets/profile-placeholder.jpg';
-import profileImg from '~/assets/profile.jpg';
+import profileImgLarge from '~/assets/me.jpeg';
+import profileImgPlaceholder from '~/assets/me.jpeg';
+import profileImg from '~/assets/me.jpeg';
 import { Button } from '~/components/button';
 import { DecoderText } from '~/components/decoder-text';
 import { Divider } from '~/components/divider';
@@ -14,24 +14,14 @@ import { Fragment, useState } from 'react';
 import { media } from '~/utils/style';
 import katakana from './katakana.svg';
 import styles from './profile.module.css';
+import PillButtons from '../../components/pillbuttons/pillbuttons';
 
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
-    </Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p"> I’m Sheharyar Abid, a full-stack software engineer based in Islamabad, Pakistan, currently working as a Front-End Developer and Team Lead at{' '} <Link href="http://integcubes.com/">IntegCubes</Link>. I specialize in building scalable, high-performance enterprise applications using modern technologies like Angular, React, Nuxt, and the MERN stack. My work spans frontend development, API integration, and creating data-driven interfaces with a focus on clean architecture, responsive design, and user-centric solutions. I am passionate about developing maintainable and efficient software that meets both functional and modern design standards across various industries. </Text>
   </Fragment>
 );
 
@@ -55,6 +45,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
           <div className={styles.content} ref={nodeRef}>
             <div className={styles.column}>
               <ProfileText visible={visible} titleId={titleId} />
+             <PillButtons/>
               <Button
                 secondary
                 className={styles.button}
