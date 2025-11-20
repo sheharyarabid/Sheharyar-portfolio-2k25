@@ -12,13 +12,21 @@ const PillButtons = () => {
       >
         LinkedIn
       </a>
-      {/* <a
-        href="/assets/YourCV.pdf" // replace with your local asset path
+      <a
+        href="https://drive.google.com/file/d/1aAc9s9xWyOkNB4S14npOuDwfqkc4HjCK/view?usp=sharing" // replace with your local asset path
         download
         className={styles.button}
       >
         Download Resume
-      </a> */}
+      </a>
+      <a
+        href="https://github.com/sheharyarabid" // replace with your local asset path
+        download
+        className={styles.button}
+      >
+        Github
+      </a>
+
     </div>
   );
 };
