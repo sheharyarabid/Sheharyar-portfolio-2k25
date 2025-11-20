@@ -56,7 +56,7 @@ const items = [
 export const meta = () => {
   return baseMeta({
     title: 'Software Engineer',
-    description: `Design portfolio of ${config.name} — a software engineer.`,
+    description: `a portfolio of ${config.name} — a software engineer.`,
   });
 };
 
