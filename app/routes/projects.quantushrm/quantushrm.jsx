@@ -19,7 +19,7 @@ import imageSprDesignSystemLightPlaceholder from '~/assets/quantushrm3.png';
 import imageSprDesignSystemLight from '~/assets/quantushrm3.png';
 import imageSprLessonBuilderDarkLarge from '~/assets/quantushrm1.png';
 import imageSprLessonBuilderDarkPlaceholder from '~/assets/quantushrm1.png';
-import imageSprLessonBuilderDark from '~/assets/spr-lesson-builder-dark.jpg';
+import imageSprLessonBuilderDark from '~/assets/quantushrm1.png';
 import imageSprLessonBuilderLightLarge from '~/assets/quantushrm1.png';
 import imageSprLessonBuilderLightPlaceholder from '~/assets/spr-lesson-builder-light-placeholder.jpg';
 import imageSprLessonBuilderLight from '~/assets/quantushrm1.png';
